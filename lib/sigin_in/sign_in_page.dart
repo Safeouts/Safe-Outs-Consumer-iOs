@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:safeoutsconsumer/commom_widgets/show_exception_alert_dialog.dart';
+import 'package:safeoutsconsumer/screens/homepage.dart';
 import 'package:safeoutsconsumer/sigin_in/sign_in_button.dart';
 import 'package:safeoutsconsumer/sigin_in/social_sign_in_button.dart';
 
@@ -108,6 +109,12 @@ class SignInPage extends StatelessWidget {
             text: 'Sign in with Phone',
             textColor: Colors.white,
             color: Colors.teal,
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Homepage()),
+              );
+            },
             // onPressed: isLoading ? null : () => _signInWithFacebook(context),
           ),
           SizedBox(height: 10.0),
@@ -122,6 +129,12 @@ class SignInPage extends StatelessWidget {
             text: 'Sign in with Google',
             textColor: Colors.white,
             color: Colors.teal,
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Homepage()),
+              );
+            },
             // onPressed: isLoading ? null : () => _signInWithGoogle(context),
           ),
           SizedBox(height: 8.0),
@@ -130,6 +143,12 @@ class SignInPage extends StatelessWidget {
             text: 'Sign in with Facebook',
             textColor: Colors.white,
             color: Colors.teal,
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Homepage()),
+              );
+            },
             // onPressed: isLoading ? null : () => _signInWithFacebook(context),
           ),
           // SizedBox(height: 8.0),

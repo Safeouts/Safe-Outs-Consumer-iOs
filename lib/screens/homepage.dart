@@ -2,12 +2,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:safeoutsconsumer/screens/SettingsPage.dart';
 
-class homepage extends StatefulWidget {
+class Homepage extends StatefulWidget {
   @override
   _homepageState createState() => _homepageState();
 }
 
-class _homepageState extends State<homepage> {
+class _homepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,7 +18,6 @@ class _homepageState extends State<homepage> {
             onTap: () {
               SettingsPage();
             },
-            // onTap: () => SettingsPage(),
             child: Image.asset(
               "assets/images/logo.png",
             ),
