@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:launch_review/launch_review.dart';
+import 'package:safeoutsconsumer/screens/AdminLogin.dart';
+import 'package:safeoutsconsumer/screens/splashscreen.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'editProfile.dart';
+import 'notifications.dart';
 
 
 
@@ -85,10 +88,10 @@ class _SettingsPageState extends State<SettingsPage> {
               ),
              Card(
               child:  ListTile(
-                  // onTap: () {
-                  //   Navigator.push(context,
-                  //       // MaterialPageRoute(builder: (ctx) => FirstScreen()));
-                  // },
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (ctx) => AdminLogin()));
+                  },
                 leading: Icon(Icons.phone,color: Colors.teal),
                 title: Text("Change phone no."),
 
@@ -120,10 +123,10 @@ class _SettingsPageState extends State<SettingsPage> {
               ),
               Card(
               child:ListTile(
-                // onTap: () {
-                //   Navigator.push(context,
-                //       // MaterialPageRoute(builder: (ctx) => Notifications()));
-                // },
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (ctx) => Notifications()));
+                },
                 leading: Icon(Icons.notification_important,color: Colors.teal),
                 title: Text("Notification"),
               ),
@@ -227,10 +230,10 @@ class _SettingsPageState extends State<SettingsPage> {
           actions: <Widget>[
             FlatButton(
               textColor: Theme.of(context).accentColor,
-              // onPressed: () => Navigator.pushAndRemoveUntil(
-              //     context,
-              //     // MaterialPageRoute(builder: (context) => SplashScreen()),
-              //         (route) => false),
+              onPressed: () => Navigator.pushAndRemoveUntil(
+                  context,
+                  MaterialPageRoute(builder: (context) => SplashScreen()),
+                      (route) => false),
               child: Text(
                 'Yes',
               ),
@@ -263,10 +266,10 @@ class _SettingsPageState extends State<SettingsPage> {
           actions: <Widget>[
             FlatButton(
               textColor: Theme.of(context).accentColor,
-              // onPressed: () => Navigator.pushAndRemoveUntil(
-              // context,
-              // // MaterialPageRoute(builder: (context) => SplashScreen()),
-              // (route) => false),
+              onPressed: () => Navigator.pushAndRemoveUntil(
+              context,
+              MaterialPageRoute(builder: (context) => SplashScreen()),
+              (route) => false),
               child: Text(
                 'Yes',
               ),
