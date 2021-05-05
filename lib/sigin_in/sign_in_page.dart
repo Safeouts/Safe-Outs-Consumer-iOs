@@ -150,8 +150,8 @@ class SignInPage extends StatelessWidget {
           SocialSignInButton(
             assetName: 'images/google-logo.png',
             text: 'Sign in with Google',
-            textColor: Colors.white,
-            color: Colors.teal,
+            textColor: Colors.black,
+            color: Colors.white,
             onPressed: () {
               Navigator.push(
                 context,
@@ -165,7 +165,7 @@ class SignInPage extends StatelessWidget {
             assetName: 'images/facebook-logo.png',
             text: 'Sign in with Facebook',
             textColor: Colors.white,
-            color: Colors.teal,
+            color: Colors.blue,
             onPressed: () {
               Navigator.push(
                 context,
