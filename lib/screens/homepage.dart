@@ -19,6 +19,11 @@ class _homepageState extends State<Homepage> {
           padding: const EdgeInsets.all(8.0),
           child: GestureDetector(
             onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => SettingsPage()),
+              );
               SettingsPage();
             },
             child: Image.asset(

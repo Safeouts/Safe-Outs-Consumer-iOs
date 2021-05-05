@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:launch_review/launch_review.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import 'editProfile.dart';
+
 
 
 class SettingsPage extends StatefulWidget {
@@ -44,10 +46,10 @@ class _SettingsPageState extends State<SettingsPage> {
           child: Column(
             children: [
               ListTile(
-                // onTap: () {
-                //   Navigator.push(context,
-                //       // MaterialPageRoute(builder: (ctx) => EditProfile()));
-                // },
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (ctx) => EditProfile()));
+                },
                 leading: ClipOval(
                   child: CircleAvatar(
                     radius: 25,
