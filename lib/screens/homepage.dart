@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:safeoutsconsumer/screens/SettingsPage.dart';
 
 class Homepage extends StatefulWidget {
+  Homepage({Key key}) : super(key: key);
+
+
   @override
   _homepageState createState() => _homepageState();
 }

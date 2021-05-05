@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:safeoutsconsumer/commom_widgets/show_exception_alert_dialog.dart';
+import 'package:safeoutsconsumer/screens/AdminLogin.dart';
 import 'package:safeoutsconsumer/screens/homepage.dart';
 import 'package:safeoutsconsumer/sigin_in/sign_in_button.dart';
 import 'package:safeoutsconsumer/sigin_in/social_sign_in_button.dart';
@@ -119,7 +120,7 @@ class SignInPage extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => Homepage()),
+                MaterialPageRoute(builder: (context) => AdminLogin()),
               );
             },
             // onPressed: isLoading ? null : () => _signInWithFacebook(context),
@@ -147,14 +148,14 @@ class SignInPage extends StatelessWidget {
           ]),
           SizedBox(height: 10.0),
           SocialSignInButton(
-            assetName: 'images/google-new-logo.png',
+            assetName: 'images/google-logo.png',
             text: 'Sign in with Google',
             textColor: Colors.white,
             color: Colors.teal,
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => Homepage()),
+                MaterialPageRoute(builder: (context) => AdminLogin()),
               );
             },
             // onPressed: isLoading ? null : () => _signInWithGoogle(context),
@@ -168,7 +169,7 @@ class SignInPage extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => Homepage()),
+                MaterialPageRoute(builder: (context) => AdminLogin()),
               );
             },
             // onPressed: isLoading ? null : () => _signInWithFacebook(context),
