@@ -155,7 +155,7 @@ class SignInPage extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => AdminLogin()),
+                MaterialPageRoute(builder: (context) => Homepage()),
               );
             },
             // onPressed: isLoading ? null : () => _signInWithGoogle(context),
@@ -169,7 +169,7 @@ class SignInPage extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => AdminLogin()),
+                MaterialPageRoute(builder: (context) => Homepage()),
               );
             },
             // onPressed: isLoading ? null : () => _signInWithFacebook(context),
