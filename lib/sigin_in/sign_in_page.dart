@@ -82,10 +82,6 @@ class SignInPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Safe Outs'),
-        elevation: 2.0,
-      ),
       body: _buildContent(context),
       backgroundColor: Colors.grey[200],
     );
@@ -99,14 +95,25 @@ class SignInPage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
+
+          SizedBox(height: 48.0),
+          Row(children: <Widget>[
+            Expanded(
+              child: new Container(
+                  margin: const EdgeInsets.only(left: 10.0, right: 10.0),
+                  child: Image.asset('assets/images/second.png'),
+
+              ),
+            ),
+            // Text("OR"),
+          ]),
           SizedBox(
             height: 50.0,
             child: _buildHeader(),
           ),
-          SizedBox(height: 48.0),
           SocialSignInButton(
             assetName: 'images/phone-logo.png',
-            text: 'Sign in with Phone',
+            text: 'Sign in with Phone no.',
             textColor: Colors.white,
             color: Colors.teal,
             onPressed: () {
@@ -118,14 +125,29 @@ class SignInPage extends StatelessWidget {
             // onPressed: isLoading ? null : () => _signInWithFacebook(context),
           ),
           SizedBox(height: 10.0),
-          Text(
-            '----------------------------------or----------------------------------',
-            style: TextStyle(fontSize: 14.0, color: Colors.black87),
-            textAlign: TextAlign.center,
-          ),
+          Row(children: <Widget>[
+            Expanded(
+              child: new Container(
+                  margin: const EdgeInsets.only(left: 10.0, right: 10.0),
+                  child: Divider(
+                    color: Colors.grey,
+                    height: 36,
+                    thickness: 1,
+                  )),
+            ),
+            Text("OR"),
+            Expanded(
+              child: new Container(
+                  margin: const EdgeInsets.only(left: 10.0, right: 10.0),
+                  child: Divider(
+                    color: Colors.black,
+                    height: 36,
+                  )),
+            ),
+          ]),
           SizedBox(height: 10.0),
           SocialSignInButton(
-            assetName: 'images/google-logo.png',
+            assetName: 'images/google-new-logo.png',
             text: 'Sign in with Google',
             textColor: Colors.white,
             color: Colors.teal,
@@ -183,13 +205,13 @@ class SignInPage extends StatelessWidget {
     //     child: CircularProgressIndicator(),
     //   );
     // }
-    return Text(
-      'Sign in',
-      textAlign: TextAlign.center,
-      style: TextStyle(
-        fontSize: 32.0,
-        fontWeight: FontWeight.w600,
-      ),
-    );
+    // return Text(
+    //   'Sign in',
+    //   textAlign: TextAlign.center,
+    //   style: TextStyle(
+    //     fontSize: 32.0,
+    //     fontWeight: FontWeight.w600,
+    //   ),
+    // );
   }
 }
