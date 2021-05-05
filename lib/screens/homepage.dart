@@ -33,8 +33,9 @@ class _homepageState extends State<Homepage> {
         ),
       ),
       body: Center(
-        child: Text('Customer HomePage'),
+        child: Text('Restaurants nearby'),
       ),
+
     );
   }
 }
