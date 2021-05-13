@@ -165,7 +165,7 @@ class SignInPage extends StatelessWidget {
             assetName: 'images/facebook-logo.png',
             text: 'Sign in with Facebook',
             textColor: Colors.white,
-            color: Colors.blue,
+            color: Color(0xFF4285F4),
             onPressed: () {
               Navigator.push(
                 context,

@@ -48,6 +48,19 @@ dependencies:
   intl: 0.16.1
   rxdart: 0.24.1
 
+  #State Management
+  auto_size_text: ^2.1.0
+
+  # Sign In Button Package
+  flutter_signin_button: ^2.0.0
+
+  #Sign In Packages
+  flutter_facebook_auth: ^3.3.2
+  flutter_facebook_login: ^3.0.0
+
+  #Loading Animation Package
+  flutter_spinkit: ^5.0.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
